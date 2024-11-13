@@ -1,0 +1,23 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Digit Recognition</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body class="bg-dark text-white">
+    <div class="container mt-5 text-center">
+        <h1>Welcome to Digit Recognition</h1>
+        <p>Select one of the options below:</p>
+
+        <div class="mt-4">
+            <a href="{{ url_for('mnist_dataset') }}" class="btn btn-primary btn-lg">Use MNIST Dataset</a>
+        </div>
+        <div class="mt-4">
+            <a href="{{ url_for('upload_csv') }}" class="btn btn-secondary btn-lg">Upload Custom CSV File</a>
+        </div>
+    </div>
+</body>
+</html>
